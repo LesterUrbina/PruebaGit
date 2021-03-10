@@ -37,6 +37,7 @@ public class Vehiculo {
 	}
 
 	public void setModelo(String modelo) {
+	
 		this.modelo = modelo;
 	}
 
@@ -45,7 +46,16 @@ public class Vehiculo {
 	}
 
 	public void setPrecio(double precio) {
-		this.precio = precio;
+		
+		if(fullEquipo==true)
+		{
+			this.precio = precio+1500;
+		}
+		else
+		{
+			this.precio=precio;
+		}
+		
 	}
 
 	public boolean isFullEquipo() {
@@ -56,5 +66,7 @@ public class Vehiculo {
 		this.fullEquipo = fullEquipo;
 	}
 	
-		
-}
+	
+	
+	
+	}
